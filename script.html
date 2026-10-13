@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+    <meta
+        name="description"
+        content="View Roblox script details on PhachiX."
+    >
+
+    <title>PhachiX | Script</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="nav">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            Phachi<span>X</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="index.html#scripts"
+                class="active"
+            >
+                Scripts
+            </a>
+
+            <a href="index.html#games">
+                Games
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+        <button
+            id="backButton"
+            class="nav-button"
+            type="button"
+        >
+            ← Back
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="script-page">
+
+    <!-- Loading -->
+
+    <div
+        id="loading"
+        class="loading-card"
+    >
+
+        <div class="loader"></div>
+
+        <p>
+            Loading script...
+        </p>
+
+    </div>
+
+
+    <!-- Script Content -->
+
+    <div
+        id="scriptContent"
+        style="display:none;"
+    >
+
+        <!-- Breadcrumb -->
+
+        <div
+            style="
+                margin-bottom:18px;
+                color:#666;
+                font-size:11px;
+            "
+        >
+
+            <a
+                href="index.html"
+                style="
+                    color:#888;
+                    text-decoration:none;
+                "
+            >
+                Home
+            </a>
+
+            <span>/</span>
+
+            <a
+                href="index.html#scripts"
+                style="
+                    color:#888;
+                    text-decoration:none;
+                "
+            >
+                Scripts
+            </a>
+
+            <span>/</span>
+
+            <span
+                id="breadcrumbName"
+                style="color:#aaa;"
+            >
+                Script
+            </span>
+
+        </div>
+
+
+        <!-- Header -->
+
+        <section class="script-header">
+
+            <div>
+
+                <div
+                    id="game"
+                    class="game"
+                >
+                    Roblox
+                </div>
+
+                <h1 id="name">
+                    Script Name
+                </h1>
+
+                <p id="description">
+                    Script description.
+                </p>
+
+            </div>
+
+
+            <div
+                id="status"
+                class="status"
+            >
+                ● WORKING
+            </div>
+
+        </section>
+
+
+        <!-- Info -->
+
+        <div class="info">
+
+            <span id="version">
+                Version 1.0.0
+            </span>
+
+            <span id="views">
+                👁 0
+            </span>
+
+            <span id="updated">
+                Updated recently
+            </span>
+
+        </div>
+
+
+        <!-- Tags -->
+
+        <div
+            id="tags"
+            class="tags"
+        ></div>
+
+
+        <!-- Page Link -->
+
+        <section
+            class="code-box"
+            style="margin-bottom:18px;"
+        >
+
+            <div class="code-top">
+
+                <span>
+                    Page Link
+                </span>
+
+                <button
+                    id="copyPageLink"
+                    type="button"
+                >
+                    Copy Link
+                </button>
+
+            </div>
+
+            <div
+                style="
+                    padding:15px;
+                    color:#777;
+                    font-family:monospace;
+                    font-size:11px;
+                    word-break:break-all;
+                "
+                id="pageLink"
+            >
+                Loading page link...
+            </div>
+
+        </section>
+
+
+        <!-- Script Code -->
+
+        <section class="code-box">
+
+            <div class="code-top">
+
+                <span>
+                    Script Code
+                </span>
+
+                <button
+                    id="copyButton"
+                    type="button"
+                >
+                    Copy Script
+                </button>
+
+            </div>
+
+            <pre><code id="code"></code></pre>
+
+        </section>
+
+
+        <!-- Notice -->
+
+        <div
+            style="
+                margin-top:18px;
+                padding:15px 17px;
+                border:1px solid #261717;
+                border-radius:10px;
+                background:#0b0909;
+                color:#666;
+                font-size:11px;
+                line-height:1.7;
+            "
+        >
+
+            <strong>
+                PhachiX Notice:
+            </strong>
+
+            Always review scripts before running
+            them. Only use scripts you trust and
+            are authorized to use.
+
+        </div>
+
+
+        <!-- Bottom Buttons -->
+
+        <div
+            style="
+                margin-top:25px;
+                display:flex;
+                justify-content:center;
+                gap:10px;
+                flex-wrap:wrap;
+            "
+        >
+
+            <button
+                id="bottomBack"
+                type="button"
+                class="cta-button"
+                style="border:0;cursor:pointer;"
+            >
+                ← Back
+            </button>
+
+            <button
+                id="bottomCopyLink"
+                type="button"
+                class="cta-button"
+                style="border:0;cursor:pointer;"
+            >
+                🔗 Copy Page Link
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Error -->
+
+    <section
+        id="error"
+        style="display:none;text-align:center;"
+    >
+
+        <div class="empty-icon">
+            ⚠️
+        </div>
+
+        <h2>
+            Script Not Found
+        </h2>
+
+        <p
+            style="
+                margin:10px 0 20px;
+                color:#777;
+                font-size:13px;
+            "
+        >
+            The requested Roblox script
+            could not be found.
+        </p>
+
+        <button
+            id="errorBack"
+            type="button"
+            class="cta-button"
+            style="border:0;cursor:pointer;"
+        >
+            ← Back
+        </button>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Phachi<span>X</span>
+            </a>
+
+            <p>
+                A professional hub for
+                Roblox scripts.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <h4>
+                    Navigation
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#scripts">
+                    Scripts
+                </a>
+
+                <a href="index.html#games">
+                    Games
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    PhachiX
+                </h4>
+
+                <a href="index.html#scripts">
+                    Latest Scripts
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 PhachiX.
+            All rights reserved.
+        </span>
+
+        <span>
+            Roblox Scripts Hub
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+"use strict";
+
+
+/* =========================================
+   ELEMENTS
+========================================= */
+
+const loading =
+    document.getElementById("loading");
+
+const content =
+    document.getElementById("scriptContent");
+
+const error =
+    document.getElementById("error");
+
+const nameElement =
+    document.getElementById("name");
+
+const gameElement =
+    document.getElementById("game");
+
+const descriptionElement =
+    document.getElementById("description");
+
+const statusElement =
+    document.getElementById("status");
+
+const versionElement =
+    document.getElementById("version");
+
+const viewsElement =
+    document.getElementById("views");
+
+const updatedElement =
+    document.getElementById("updated");
+
+const tagsElement =
+    document.getElementById("tags");
+
+const codeElement =
+    document.getElementById("code");
+
+const copyButton =
+    document.getElementById("copyButton");
+
+const copyPageLink =
+    document.getElementById("copyPageLink");
+
+const bottomCopyLink =
+    document.getElementById("bottomCopyLink");
+
+const pageLink =
+    document.getElementById("pageLink");
+
+const breadcrumbName =
+    document.getElementById("breadcrumbName");
+
+const backButton =
+    document.getElementById("backButton");
+
+const bottomBack =
+    document.getElementById("bottomBack");
+
+const errorBack =
+    document.getElementById("errorBack");
+
+
+/* =========================================
+   URL
+========================================= */
+
+const params =
+    new URLSearchParams(
+        window.location.search
+    );
+
+const scriptID =
+    params.get("id");
+
+
+/* =========================================
+   BACK FUNCTION
+========================================= */
+
+function goBack(){
+
+    /*
+       First try browser history.
+       If there is no useful history,
+       go to the scripts page.
+    */
+
+    if(
+        document.referrer &&
+        window.history.length > 1
+    ){
+
+        window.history.back();
+
+    }else{
+
+        window.location.href =
+            "index.html#scripts";
+
+    }
+
+}
+
+
+/* =========================================
+   BACK BUTTONS
+========================================= */
+
+backButton.addEventListener(
+    "click",
+    goBack
+);
+
+bottomBack.addEventListener(
+    "click",
+    goBack
+);
+
+errorBack.addEventListener(
+    "click",
+    goBack
+);
+
+
+/* =========================================
+   LOAD SCRIPT
+========================================= */
+
+async function loadScript(){
+
+    try{
+
+        if(!scriptID){
+
+            throw new Error(
+                "Missing script ID"
+            );
+
+        }
+
+
+        const response =
+            await fetch(
+                "data/scripts.json",
+                {
+                    cache:"no-store"
+                }
+            );
+
+
+        if(!response.ok){
+
+            throw new Error(
+                "JSON file not found"
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        const scripts =
+            Array.isArray(data.scripts)
+                ? data.scripts
+                : [];
+
+
+        const script =
+            scripts.find(
+                item =>
+                    String(item.id) ===
+                    String(scriptID)
+            );
+
+
+        if(!script){
+
+            throw new Error(
+                "Script not found"
+            );
+
+        }
+
+
+        /* =================================
+           PAGE TITLE
+        ================================= */
+
+        document.title =
+            "PhachiX | " +
+            (script.name || "Script");
+
+
+        /* =================================
+           BASIC DATA
+        ================================= */
+
+        nameElement.textContent =
+            script.name ||
+            "Unnamed Script";
+
+        breadcrumbName.textContent =
+            script.name ||
+            "Script";
+
+        gameElement.textContent =
+            script.game ||
+            "Roblox";
+
+        descriptionElement.textContent =
+            script.description ||
+            "No description available.";
+
+        statusElement.textContent =
+            "● " +
+            (
+                script.status ||
+                "UNKNOWN"
+            );
+
+        versionElement.textContent =
+            "Version " +
+            (
+                script.version ||
+                "1.0.0"
+            );
+
+
+        /* =================================
+           VIEWS
+        ================================= */
+
+        const views =
+            Number(script.views) || 0;
+
+        viewsElement.textContent =
+            "👁 " +
+            formatNumber(views);
+
+
+        /* =================================
+           UPDATED
+        ================================= */
+
+        updatedElement.textContent =
+            script.updated
+                ? "Updated " +
+                  script.updated
+                : "Updated recently";
+
+
+        /* =================================
+           TAGS
+        ================================= */
+
+        tagsElement.innerHTML = "";
+
+        const tags =
+            Array.isArray(script.tags)
+                ? script.tags
+                : [];
+
+
+        tags.forEach(tag => {
+
+            const element =
+                document.createElement(
+                    "span"
+                );
+
+            element.className =
+                "tag";
+
+            element.textContent =
+                tag;
+
+            tagsElement.appendChild(
+                element
+            );
+
+        });
+
+
+        /* =================================
+           SCRIPT CODE
+        ================================= */
+
+        const scriptCode =
+            script.code || "";
+
+
+        codeElement.textContent =
+            scriptCode ||
+            "-- No script code available.";
+
+
+        /* =================================
+           PAGE LINK
+        ================================= */
+
+        const currentPage =
+            window.location.href;
+
+
+        pageLink.textContent =
+            currentPage;
+
+
+        /* =================================
+           COPY SCRIPT
+        ================================= */
+
+        copyButton.onclick =
+            async function(){
+
+                if(!scriptCode){
+
+                    showButtonMessage(
+                        copyButton,
+                        "No Code"
+                    );
+
+                    return;
+
+                }
+
+
+                const success =
+                    await copyText(
+                        scriptCode
+                    );
+
+
+                if(success){
+
+                    showButtonMessage(
+                        copyButton,
+                        "Copied ✓"
+                    );
+
+                }else{
+
+                    showButtonMessage(
+                        copyButton,
+                        "Copy Failed"
+                    );
+
+                }
+
+            };
+
+
+        /* =================================
+           COPY PAGE LINK
+        ================================= */
+
+        copyPageLink.onclick =
+            async function(){
+
+                const success =
+                    await copyText(
+                        currentPage
+                    );
+
+
+                if(success){
+
+                    showButtonMessage(
+                        copyPageLink,
+                        "Copied ✓"
+                    );
+
+                }else{
+
+                    showButtonMessage(
+                        copyPageLink,
+                        "Copy Failed"
+                    );
+
+                }
+
+            };
+
+
+        bottomCopyLink.onclick =
+            async function(){
+
+                const success =
+                    await copyText(
+                        currentPage
+                    );
+
+
+                if(success){
+
+                    showButtonMessage(
+                        bottomCopyLink,
+                        "Copied ✓"
+                    );
+
+                }else{
+
+                    showButtonMessage(
+                        bottomCopyLink,
+                        "Copy Failed"
+                    );
+
+                }
+
+            };
+
+
+        /* =================================
+           SHOW PAGE
+        ================================= */
+
+        loading.style.display =
+            "none";
+
+        content.style.display =
+            "block";
+
+        error.style.display =
+            "none";
+
+    }
+
+    catch(loadError){
+
+        console.error(
+            "PhachiX:",
+            loadError
+        );
+
+        loading.style.display =
+            "none";
+
+        content.style.display =
+            "none";
+
+        error.style.display =
+            "block";
+
+    }
+
+}
+
+
+/* =========================================
+   COPY TEXT
+========================================= */
+
+async function copyText(text){
+
+    if(!text){
+        return false;
+    }
+
+
+    try{
+
+        if(
+            navigator.clipboard &&
+            window.isSecureContext
+        ){
+
+            await navigator.clipboard.writeText(
+                text
+            );
+
+            return true;
+
+        }
+
+
+        /* Fallback for some mobile browsers */
+
+        const textarea =
+            document.createElement(
+                "textarea"
+            );
+
+        textarea.value =
+            text;
+
+        textarea.style.position =
+            "fixed";
+
+        textarea.style.left =
+            "-9999px";
+
+        textarea.style.top =
+            "0";
+
+        document.body.appendChild(
+            textarea
+        );
+
+        textarea.focus();
+
+        textarea.select();
+
+        const copied =
+            document.execCommand(
+                "copy"
+            );
+
+        textarea.remove();
+
+        return copied;
+
+    }
+
+    catch(error){
+
+        console.error(
+            "Copy error:",
+            error
+        );
+
+        return false;
+
+    }
+
+}
+
+
+/* =========================================
+   BUTTON MESSAGE
+========================================= */
+
+function showButtonMessage(
+    button,
+    message
+){
+
+    const oldText =
+        button.textContent;
+
+
+    button.textContent =
+        message;
+
+
+    if(message === "Copied ✓"){
+
+        button.style.background =
+            "#168a4b";
+
+    }
+
+
+    setTimeout(()=>{
+
+        button.textContent =
+            oldText;
+
+        button.style.background =
+            "";
+
+    },1600);
+
+}
+
+
+/* =========================================
+   NUMBER FORMAT
+========================================= */
+
+function formatNumber(number){
+
+    if(number >= 1000000){
+
+        return (
+            number / 1000000
+        )
+        .toFixed(1)
+        .replace(".0","")
+        + "M";
+
+    }
+
+
+    if(number >= 1000){
+
+        return (
+            number / 1000
+        )
+        .toFixed(1)
+        .replace(".0","")
+        + "K";
+
+    }
+
+
+    return String(number);
+
+}
+
+
+/* =========================================
+   START
+========================================= */
+
+loadScript();
+
+</script>
+
+</body>
+</html>

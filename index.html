@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="PhachiX - Professional Roblox scripts hub. Discover, search and copy Roblox scripts."
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+    <title>PhachiX | Roblox Scripts</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="nav">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="PhachiX Home"
+            >
+                Phachi<span>X</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a
+                    href="index.html"
+                    class="active"
+                >
+                    Home
+                </a>
+
+                <a href="#scripts">
+                    Scripts
+                </a>
+
+                <a href="#games">
+                    Games
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+            <a
+                href="#scripts"
+                class="nav-button"
+            >
+                Browse Scripts
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-glow"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="pulse"></span>
+                    ROBLOX SCRIPTS ONLY
+                </div>
+
+                <h1>
+                    Your
+                    <span>Roblox</span>
+                    Script Hub.
+                </h1>
+
+                <p>
+                    Discover powerful Roblox scripts,
+                    search by game, view script details,
+                    and copy your favorite scripts instantly.
+                </p>
+
+
+                <!-- SEARCH -->
+
+                <div class="hero-search">
+
+                    <span class="search-icon">
+                        ⌕
+                    </span>
+
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search scripts, games or tags..."
+                        autocomplete="off"
+                        aria-label="Search scripts"
+                    >
+
+                    <button
+                        id="searchButton"
+                        type="button"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+
+                <!-- QUICK STATS -->
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+
+                        <strong id="totalScripts">
+                            —
+                        </strong>
+
+                        <span>
+                            Scripts
+                        </span>
+
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+
+                        <strong id="totalGames">
+                            —
+                        </strong>
+
+                        <span>
+                            Games
+                        </span>
+
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+
+                        <strong>
+                            24/7
+                        </strong>
+
+                        <span>
+                            Access
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTENT
+        ========================== -->
+
+        <div class="container">
+
+
+            <!-- =========================
+                 FEATURED SECTION
+            ========================== -->
+
+            <section class="featured">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            PHACHIX HUB
+                        </span>
+
+                        <h2>
+                            Find Your Next Script
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="#scripts"
+                        class="view-all"
+                    >
+                        View All →
+                    </a>
+
+                </div>
+
+
+                <!-- FEATURE CARDS -->
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ⚡
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Fast Search
+                            </h3>
+
+                            <p>
+                                Find scripts instantly
+                                using game names,
+                                tags or keywords.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🎮
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Game Filters
+                            </h3>
+
+                            <p>
+                                Browse scripts by
+                                your favorite Roblox
+                                games.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📋
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                One-Tap Copy
+                            </h3>
+
+                            <p>
+                                Copy script code
+                                quickly from any
+                                script card.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 GAMES
+            ========================== -->
+
+            <section
+                id="games"
+                class="games-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            EXPLORE
+                        </span>
+
+                        <h2>
+                            Popular Games
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="categoriesBox"
+                    class="categories"
+                >
+
+                    <button
+                        class="category active"
+                        data-category="all"
+                    >
+                        All Games
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 SCRIPTS
+            ========================== -->
+
+            <section
+                id="scripts"
+                class="scripts-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            LATEST
+                        </span>
+
+                        <h2>
+                            Roblox Scripts
+                        </h2>
+
+                    </div>
+
+                    <span
+                        id="count"
+                        class="script-count"
+                    >
+                        Loading...
+                    </span>
+
+                </div>
+
+
+                <!-- SCRIPT GRID -->
+
+                <div
+                    id="scriptGrid"
+                    class="script-grid"
+                >
+
+                    <!-- LOADING -->
+
+                    <div class="loading-card">
+
+                        <div class="loader"></div>
+
+                        <p>
+                            Loading scripts...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 EMPTY STATE
+            ========================== -->
+
+            <section
+                id="emptyState"
+                class="empty-state"
+                style="display:none;"
+            >
+
+                <div class="empty-icon">
+                    🔎
+                </div>
+
+                <h2>
+                    No Scripts Found
+                </h2>
+
+                <p>
+                    Try another search term
+                    or select a different game.
+                </p>
+
+                <button
+                    id="clearSearch"
+                    class="clear-button"
+                >
+                    Clear Search
+                </button>
+
+            </section>
+
+
+            <!-- =========================
+                 CTA
+            ========================== -->
+
+            <section class="cta">
+
+                <div class="cta-glow"></div>
+
+                <div class="cta-content">
+
+                    <span class="eyebrow">
+                        PHACHIX
+                    </span>
+
+                    <h2>
+                        Looking for a script?
+                    </h2>
+
+                    <p>
+                        Search thousands of Roblox
+                        scripts and find what you need.
+                    </p>
+
+                    <a
+                        href="#scripts"
+                        class="cta-button"
+                    >
+                        Explore Scripts
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Phachi<span>X</span>
+                </a>
+
+                <p>
+                    A professional hub for
+                    Roblox scripts.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+
+                    <h4>
+                        Navigation
+                    </h4>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="#scripts">
+                        Scripts
+                    </a>
+
+                    <a href="#games">
+                        Games
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        PhachiX
+                    </h4>
+
+                    <a href="#scripts">
+                        Latest Scripts
+                    </a>
+
+                    <a href="#games">
+                        Popular Games
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 PhachiX. All rights reserved.
+            </span>
+
+            <span>
+                Roblox Scripts Hub
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="site-loader.js"></script>
+</body>
+
+</html>
