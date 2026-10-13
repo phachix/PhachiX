@@ -1,66 +1,11 @@
 {
-  "siteName": "PhachiX",
-  "tagline": "Your Roblox Script Hub",
-  "description": "Discover powerful Roblox scripts, explore popular games, and find scripts quickly.",
-  "stats": {
-    "scripts": 25,
-    "games": 12,
-    "access": "24/7"
-  },
-  "features": [
-    {
-      "icon": "⚡",
-      "title": "Fast Search",
-      "description": "Find scripts quickly using names, games, and tags."
-    },
-    {
-      "icon": "🎮",
-      "title": "Game Filters",
-      "description": "Browse scripts by your favorite Roblox games."
-    },
-    {
-      "icon": "📋",
-      "title": "Easy Access",
-      "description": "Open your selected script with one simple click."
-    }
-  ],
-  "games": [
-    {
-      "name": "Blox Fruits",
-      "image": "https://tr.rbxcdn.com/180DAY-example/420/420/Image/Png/noFilter",
-      "description": "Explore Blox Fruits scripts.",
-      "scriptCount": 8
-    },
-    {
-      "name": "Grow a Garden",
-      "image": "",
-      "description": "Find useful Grow a Garden scripts.",
-      "scriptCount": 6
-    },
-    {
-      "name": "Steal a Brainrot",
-      "image": "",
-      "description": "Browse Steal a Brainrot scripts.",
-      "scriptCount": 5
-    },
-    {
-      "name": "Murder Mystery 2",
-      "image": "",
-      "description": "Explore MM2 scripts.",
-      "scriptCount": 6
-    }
-  ],
   "scripts": [
     {
       "id": "bf-001",
       "name": "Blox Fruits Script",
       "game": "Blox Fruits",
-      "description": "Blox Fruits script information and access.",
-      "tags": [
-        "Blox Fruits",
-        "Script",
-        "Roblox"
-      ],
+      "description": "Blox Fruits scripts collection and information.",
+      "tags": ["Blox Fruits", "Roblox", "Mobile"],
       "executor": "Mobile",
       "updated": "2026-10-13",
       "link": "#"
@@ -69,11 +14,8 @@
       "id": "gag-001",
       "name": "Grow a Garden Script",
       "game": "Grow a Garden",
-      "description": "Grow a Garden script information and access.",
-      "tags": [
-        "Grow a Garden",
-        "Script"
-      ],
+      "description": "Grow a Garden scripts and useful resources.",
+      "tags": ["Grow a Garden", "Roblox", "Garden"],
       "executor": "Mobile",
       "updated": "2026-10-13",
       "link": "#"
@@ -82,14 +24,31 @@
       "id": "sab-001",
       "name": "Steal a Brainrot Script",
       "game": "Steal a Brainrot",
-      "description": "Steal a Brainrot script information and access.",
-      "tags": [
-        "Steal a Brainrot",
-        "Script"
-      ],
+      "description": "Steal a Brainrot script information and resources.",
+      "tags": ["Steal a Brainrot", "Roblox"],
+      "executor": "Mobile",
+      "updated": "2026-10-13",
+      "link": "#"
+    },
+    {
+      "id": "mm2-001",
+      "name": "Murder Mystery 2",
+      "game": "Murder Mystery 2",
+      "description": "Murder Mystery 2 scripts and community resources.",
+      "tags": ["MM2", "Roblox", "Mystery"],
+      "executor": "Mobile",
+      "updated": "2026-10-13",
+      "link": "#"
+    },
+    {
+      "id": "adopt-001",
+      "name": "Adopt Me Resources",
+      "game": "Adopt Me",
+      "description": "Adopt Me guides and community resources.",
+      "tags": ["Adopt Me", "Roblox", "Pets"],
       "executor": "Mobile",
       "updated": "2026-10-13",
       "link": "#"
     }
   ]
-    }
+}
